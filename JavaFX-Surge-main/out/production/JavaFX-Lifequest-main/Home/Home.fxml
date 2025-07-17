@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane id="AnchorPane" prefHeight="526.0" prefWidth="703.0" style="-fx-background-color: #001a1a;" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Home.HomeController">
+   <children>
+      <Pane layoutY="-11.0" prefHeight="124.0" prefWidth="703.0" style="-fx-background-color: #002e4d;">
+         <children>
+            <ImageView fitHeight="57.0" fitWidth="59.0" layoutX="45.0" layoutY="41.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../images/robot.png" />
+               </image>
+            </ImageView>
+            <Label fx:id="lblUsername" alignment="BASELINE_LEFT" layoutX="113.0" layoutY="70.0" prefHeight="36.0" prefWidth="163.0" textFill="WHITE">
+               <font>
+                  <Font name="Forte" size="28.0" />
+               </font>
+            </Label>
+            <Button fx:id="btnTable" alignment="BASELINE_LEFT" layoutX="529.0" layoutY="71.0" mnemonicParsing="false" onMouseClicked="#handleButtonAction" prefHeight="36.0" prefWidth="141.0" style="-fx-background-color: #001a1a; -fx-border-color: #001f33;" text="Table" textFill="#f5f5f5">
+               <font>
+                  <Font name="Forte" size="16.0" />
+               </font>
+            </Button>
+            <Button fx:id="btnMap" alignment="BASELINE_LEFT" layoutX="529.0" layoutY="23.0" mnemonicParsing="false" onMouseClicked="#handleButtonAction" prefHeight="36.0" prefWidth="141.0" style="-fx-background-color: #001a1a; -fx-border-color: #001f33;" text="Map" textFill="#f5f5f5">
+               <font>
+                  <Font name="Forte" size="16.0" />
+               </font>
+            </Button>
+            <ImageView fitHeight="26.0" fitWidth="26.0" layoutX="635.0" layoutY="76.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../images/list.png" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="26.0" fitWidth="36.0" layoutX="635.0" layoutY="28.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../images/map.png" />
+               </image>
+            </ImageView>
+         </children>
+      </Pane>
+      <Pane layoutY="113.0" prefHeight="425.0" prefWidth="445.0" style="-fx-background-color: #001f33;">
+         <children>
+            <Button fx:id="btnStart" alignment="BASELINE_CENTER" contentDisplay="CENTER" layoutX="52.0" layoutY="33.0" mnemonicParsing="false" onMouseClicked="#handleButtonAction" prefHeight="68.0" prefWidth="333.0" style="-fx-background-color: #001a1a; -fx-border-color: #002e4d;" text="Start Activity" textFill="#f2eded" />
+            <Button fx:id="btnNew" alignment="BASELINE_CENTER" contentDisplay="CENTER" layoutX="52.0" layoutY="124.0" mnemonicParsing="false" onMouseClicked="#handleButtonAction" prefHeight="68.0" prefWidth="333.0" style="-fx-background-color: #001a1a; -fx-border-color: #002e4d;" text="Add New Activity" textFill="#e8e8e8" />
+            <Button fx:id="btnDel" alignment="BASELINE_CENTER" contentDisplay="CENTER" layoutX="54.0" layoutY="216.0" mnemonicParsing="false" onMouseClicked="#handleButtonAction" prefHeight="68.0" prefWidth="333.0" style="-fx-background-color: #001a1a; -fx-border-color: #002e4d;" text="Delete Activity" textFill="WHITE" />
+            <Button fx:id="btnGrp" alignment="BASELINE_CENTER" contentDisplay="CENTER" layoutX="54.0" layoutY="307.0" mnemonicParsing="false" onMouseClicked="#handleButtonAction" prefHeight="68.0" prefWidth="333.0" style="-fx-background-color: #001a1a; -fx-border-color: #002e4d;" text="Group Activity" textFill="#f5f5f5" />
+            <ImageView fitHeight="50.0" fitWidth="57.0" layoutX="82.0" layoutY="133.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../images/marker.png" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="50.0" fitWidth="57.0" layoutX="82.0" layoutY="225.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../images/disable.png" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="50.0" fitWidth="57.0" layoutX="82.0" layoutY="316.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../images/teamwork.png" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="50.0" fitWidth="57.0" layoutX="82.0" layoutY="42.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../images/project.png" />
+               </image>
+            </ImageView>
+         </children></Pane>
+      <Label alignment="CENTER" layoutX="496.0" layoutY="185.0" prefHeight="26.0" prefWidth="163.0" text="Surge Manager" textAlignment="CENTER" textFill="#cbd0da">
+         <font>
+            <Font name="Forte" size="14.0" />
+         </font>
+      </Label>
+      <ImageView fitHeight="48.0" fitWidth="36.0" layoutX="559.0" layoutY="149.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../images/sword.png" />
+         </image>
+      </ImageView>
+      <Button fx:id="btnOut" layoutX="504.0" layoutY="430.0" mnemonicParsing="false" onMouseClicked="#handleButtonAction" prefHeight="44.0" prefWidth="148.0" style="-fx-background-color: white;" text="Log Out">
+         <font>
+            <Font name="Forte" size="16.0" />
+         </font>
+      </Button>
+      <Label alignment="CENTER" layoutX="557.0" layoutY="211.0" prefHeight="26.0" prefWidth="43.0" text="Home" textAlignment="CENTER" textFill="#ebedf2">
+         <font>
+            <Font name="Calibri" size="13.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>

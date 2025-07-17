@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane id="AnchorPane" prefHeight="379.0" prefWidth="722.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Home.HomeTableController">
+   <children>
+      <AnchorPane layoutX="-6.0" prefHeight="100.0" prefWidth="722.0" style="-fx-background-color: white;">
+         <children>
+            <TableView fx:id="tbl2" layoutX="4.0" layoutY="1.0" prefHeight="99.0" prefWidth="722.0">
+               <columns>
+                  <TableColumn fx:id="tbl_bonus" prefWidth="361.0" text="Bonus XP Gained" />
+                  <TableColumn fx:id="tbl_total" prefWidth="361.0" text="Total XP Gained" />
+               </columns>
+            </TableView>
+         </children>
+      </AnchorPane>
+      <AnchorPane layoutX="-5.0" layoutY="100.0" prefHeight="279.0" prefWidth="722.0">
+         <children>
+            <TableView fx:id="tbl" layoutX="-12.0" prefHeight="279.0" prefWidth="726.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="-4.0" AnchorPane.topAnchor="0.0">
+              <columns>
+                <TableColumn fx:id="tbl_activity" prefWidth="240.66667" text="Activity" />
+                <TableColumn fx:id="tbl_xpGained" prefWidth="240.66667" text="XP Gained" />
+                  <TableColumn fx:id="tbl_Hours" prefWidth="240.66667" text="Hours Spent" />
+              </columns>
+               <padding>
+                  <Insets left="5.0" />
+               </padding>
+            </TableView>
+         </children>
+      </AnchorPane>
+   </children>
+</AnchorPane>
